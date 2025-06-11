@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+}
+
+/* Header alinhando logo e botão */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 80px;
+    padding: 0 30px;
+    background: transparent;
+}
+
+/* Logo alinhada e do mesmo tamanho da barra */
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    position: static;
+    margin: 0;
+    z-index: 10;
+}
+
+/* Botão do menu alinhado à direita */
+.menu-toggle {
+    position: static;
+    background: #fff;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 20;
+    border-radius: 6px;
+    padding: 6px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+    margin-left: auto;
+}
+.menu-toggle:hover {
+    background: #ececec;
+}
+
+/* Menu suspenso */
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 20;
+    padding: 10px 0;
+}
+.menu.show {
+    display: flex;
+}
+.menu a {
+    padding: 12px 24px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s;
+    font-size: 16px;
+}
+.menu a:hover {
+    background: #f0f0f0;
+}
+
+.main-content {
+    margin-top: 80px;
+    padding: 20px;
+}
