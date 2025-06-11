@@ -1,0 +1,39 @@
+<?php
+<!-- filepath: c:\Users\raphael-truis\Desktop\Sistema-Adocao\index.php -->
+<?php ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adotme - Sistema de Adoção</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/ADOTME-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img id="splashLogo" src="./img/ADOTME-removebg-preview.png" alt="Logo Adotme" />
+    </div>
+    <header>
+        <img src="./img/ADOTME-removebg-preview.png" alt="Logo" class="logo">
+        <nav>
+            <a href="animal.php">Animal</a>
+            <a href="cachorro.php">Cachorro</a>
+            <a href="gato.php">Gato</a>
+            <a href="adotante.php">Adotante</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo ao <span>Adotme</span></h1>
+            <p>Encontre seu novo melhor amigo ou ajude um animal a encontrar um lar!</p>
+            <a href="animal.php" class="btn">Ver Animais</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <?=date('Y')?> Adotme. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
